@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Carta para mi princela</title>
+  <style>
+    body{
+      margin:0;
+      font-family:'Cormorant Garamond', serif;
+      background:linear-gradient(180deg,#ffe6f0 0%,#fff8e7 100%);
+      display:flex;align-items:center;justify-content:center;
+      min-height:100vh;
+      color:#4a2c2a;
+    }
+    .wrap{text-align:center;padding:20px}
+    .envelope{
+      width:320px;height:200px;
+      background:linear-gradient(135deg,#f9d5e5,#fceabb);
+      border-radius:12px;
+      box-shadow:0 8px 24px rgba(0,0,0,0.15);
+      cursor:pointer;
+      position:relative;
+    }
+    .flap{
+      position:absolute;top:0;left:0;right:0;height:50%;
+      background:linear-gradient(180deg,#fceabb,#f9d5e5);
+      border-radius:12px 12px 0 0;
+      display:flex;align-items:center;justify-content:center;
+      font-size:22px;font-weight:bold;
+      color:#b22222;
+      font-family:'Great Vibes',cursive;
+    }
+    .flap::before{
+      content:"🌹";
+      margin-right:8px;
+    }
+    .letter{
+      margin-top:20px;
+      background:#fff;
+      border-radius:12px;
+      box-shadow:0 8px 24px rgba(0,0,0,0.1);
+      padding:24px;
+      max-width:360px;
+      text-align:left;
+      display:none;
+      animation:fadeIn 1s ease forwards;
+    }
+    .letter h1{
+      font-family:'Great Vibes',cursive;
+      font-size:26px;color:#b22222;margin:0 0 12px;
+    }
+    .letter h1::before{
+      content:"🌹 ";
+    }
+    .letter p{line-height:1.6;margin:10px 0}
+    .quote{font-weight:bold;color:#b22222;font-style:italic}
+    .btn{
+      display:inline-block;
+      background:#b22222;color:#fff;
+      padding:10px 14px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:bold;
+      margin-top:12px;
+    }
+    iframe{border:0;border-radius:8px;margin-top:12px;width:100%;height:80px}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="envelope" onclick="document.querySelector('.letter').style.display='block'">
+      <div class="flap">Para mi princela</div>
+    </div>
+
+    <div class="letter">
+      <h1>Para Isela</h1>
+      <p>Le escribo con sinceridad porque hay algo importante que quiero pedirle: <strong>una oportunidad para intentar construir una relación con usted</strong>. No busco prometer lo imposible; quiero ofrecerle mi tiempo, mi respeto y mi voluntad de cambiar lo que hizo falta.</p>
+
+      <p>Sé que en el pasado hubo momentos en los que no estuve a la altura y por eso he reflexionado y aprendido. Hoy quiero ser claro: deseo escucharla más, ser constante y respetar sus tiempos. No pretendo borrar lo ocurrido, sino aprender de ello y demostrarlo con hechos.</p>
+
+      <p class="quote">Déjeme intentar ser la persona que le haga sentir segura y querida.</p>
+
+      <a class="btn" href="https://open.spotify.com/track/26cVrv9TupyfviDfoNRzKp" target="_blank">Escuchar en Spotify</a>
+      <iframe src="https://open.spotify.com/embed/track/26cVrv9TupyfviDfoNRzKp" allow="encrypted-media"></iframe>
+
+      <p style="margin-top:12px">Si le parece bien, ¿podríamos vernos para un café este fin de semana o hablar por teléfono el domingo por la mañana? Quedo atento a la opción que le venga mejor.</p>
+
+      <p><strong>Con respeto y afecto,</strong><br><strong>Fabio</strong></p>
+    </div>
+  </div>
+</body>
+</html>
